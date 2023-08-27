@@ -6,15 +6,15 @@ int main () {
     int a, b, c, d, L;
 
     while (cin >> a >> b >> c >> d >> L) {
-        int num = 0;
+        int cnt = 0;
         if (!a && !b && !c && !d && !L) return 0;
 
         for (int i = 0; i <= L; i++) {
             int val = a*i*i + b*i + c;
 
-            if (!(val % d)) num++;
+            if (!(val % d)) cnt++;
         }
 
-        cout << num << endl;
+        cout << cnt << endl;
     }
 }
